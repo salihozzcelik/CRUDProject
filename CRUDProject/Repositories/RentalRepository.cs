@@ -32,6 +32,8 @@ namespace CRUDProject.Repositories
 
             existingPerson.film_title = customer.film_title;
             existingPerson.film_category = customer.film_category;
+            existingPerson.store_address = customer.store_address;
+            existingPerson.store_city = customer.store_city;
 
             _context.Rentals.Update(existingPerson);
             await _context.SaveChangesAsync();
